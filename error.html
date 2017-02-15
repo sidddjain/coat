@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<!--------------------------------Head ---------------------------------------------->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>COAT</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<!--------------------------------Body---------------------------------------------->
+
+<body>
+
+	<div class="container-fluid header">
+
+		<!-------------------------------Header ---------------------------------------------->
+
+
+		<div class="row">
+
+			<div class="col-md-5 col-xs-12" style="margin-top:18px;">
+
+				<h3 class="main-header" style="margin-left:10px;">CAMPUS PUPPY ONLINE ASSESMENT TEST</h3>
+				<h5 class="sub-header" style="margin-left:10px;">powered by  <a href="http://www.campuspuppy.com" target="_blank" class="link">CAMPUSPUPPY</a></h5>
+
+			</div>
+
+			<div class=" col-md-offset-2 col-md-5">
+				<div class="row">
+
+					<!--------------------------------Login Form ---------------------------------------------->
+
+
+					<div class="col-md-5">
+						<input type="email" placeholder="E-MAIL ADDRESS" class="main-form main-form-2" style="width:100%;" id="login-form">
+					</div>
+
+					<div class="col-md-5">
+						<input type="password" placeholder="PASSWORD" class="main-form main-form-2" style="width:100%;" id="login-form">
+						<a href="#" class="forgot" id="forgot_password">Forgot Password?</a>
+					</div>
+
+					<div class="col-md-2" id="margin-add">
+						<a href="#" class="button" id="signup">LOGIN</a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!--------------------------------Forgot Password Modal---------------------------------------------->
+
+		<div class="container">
+
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!--------------------------------Modal Content ---------------------------------------------->
+
+					<div class="modal-content" style="height:370px;">
+
+						<div style="padding:12px;background-color: #0b99cd;text-align:center;">
+							<h4 style="font-size:1.7em;color:white;">FORGOT YOUR PASSWORD?</h4>
+						</div>
+
+						<div style="padding-left:50px;padding-top:40px;">
+							<p style="font-size:1.2em;font-family:'quick-b';margin-bottom:40px;">Don't worry! Just contact administrator.
+								<br>He will help you with the password.
+						</div>
+
+						<div style="padding-left:50px;padding-right:50px;">
+							<hr>
+							<a href="#" id="back" data-dismiss="modal">BACK TO LOGIN</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--------------------------------Section-1 ---------------------------------------------->
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-12 content">
+
+				<div class="col-md-offset-3 col-md-6">
+					<center>
+						<h1 style="margin-top:60px;">ERROR 404 </h1>
+						<h3>The link you followed is probably broken<br>or the page has been removed</h3>
+						<img src="assets/error.png" class="logo" style="border-right:0px !important;margin-top:0px !important;">
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--------------------------------Footer ---------------------------------------------->
+
+	<div class="container-fluid" id="footer">
+		<div class="row">
+			<div class="col-md-12" style="text-align:center; margin-top:30px;">
+				<a href="http://www.campuspuppy.com" class="forgot footer" target="_blank">&copy; Campus Puppy Private Limited 2016</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-------------------------------Scripts---------------------------------------------->
+
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/modal.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#forgot_password").click(function () {
+				$("#myModal").modal();
+			});
+		});
+
+		$(document).ready(function () {
+			$("#terms").click(function () {
+				$("#myModal-2").modal();
+			});
+		});
+	</script>
+</body>
+
+</html>
